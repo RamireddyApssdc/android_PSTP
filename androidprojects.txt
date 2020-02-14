@@ -1,0 +1,114 @@
+
+ListView:
+
+
+
+RecyclerView:
+
+	1. Create Project
+	2. Add Recyclerview libs
+		- how to add libs
+			file->project structure->Depend - > APP -> lib depen -> search required lib
+	3. Add Recyclerview component in activity xml file and get recyclerview id in java file
+	4. Create Recyclerview Adapter class
+		- > adapter class extends with RecyclerView.Adapter<present_class_name.oneInnerclass>
+		- > Implement recyclerview methods(Alt+Enter or click on red bulb in left side of the line)
+	5. Send the data to Adapter class
+		1.MyAdapter my=new MyAdapter("data")//cons
+		2.my.getData("Data")//meth
+
+
+
+
+https://pixabay.com/
+
+
+shorturl.at/nvMR5
+
+AsyncTask:
+
+	1. Create project
+	2. complete ui design in corres xml
+	3. create java file and extends with AsyncTask <String/URL,Void/Integer,String/Bitmap>
+		-> Alt+Enter implement default methods
+		- > doInBackground() is default method for AsyncTask
+			-> get url in string formate
+			-> assign string_url to URL constructor
+			-> open http or https url connection 
+			-> store data in InputStream 
+			-> store data into bufferedreader by using inputstreamreader
+			-> store br data in stringBuilder line by line
+			-> by using for loop or while we get the data from br to sb
+	
+
+
+JSONObject root = new JSONObject("link");
+JSONArray arr=root.getJSONArray();
+JSONObject po = arr.getJSONObject(0);
+String s=po.getString("user")
+String link=po.getString("userImageUrl")
+Picasso.get()/with(this or context obj)
+	.load(link)
+	.into(img)
+	.build()
+
+
+
+
+Software Requirements: –
+
+	Front End:XML
+	Back End: PHP, MYSQL
+	Windows: windows 7/8/10 ,Ubuntu
+	Pros :  i3/i5/i7
+
+
+Android Tools:
+
+	IDE: Android Studio
+	Android SDK
+	Android Emulator
+	JDK Version: jdk-8u66-windows-i586
+
+Modules List
+
+Hspt Admin
+
+	Login
+	Check patn count and details
+	re-Schedule doctor opintments 
+	provide daywise schedule 
+	slot booking for patn
+User
+
+	Register
+	Login
+	Search Nearby Hspt
+	View Doctor Details
+	Address
+	Mobile/land line
+	Google map location
+	View Slot vacancy
+	slot booking
+
+
+
+
+https://pixabay.com/api/?key=14141723-8df1329a32d4b2aac969c1593&q=cat&image_type=photo&pretty=true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
