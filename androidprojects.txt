@@ -10,6 +10,7 @@ RecyclerView:
 		- how to add libs
 			file->project structure->Depend - > APP -> lib depen -> search required lib
 	3. Add Recyclerview component in activity xml file and get recyclerview id in java file
+		-> setLayoumanager to recyclerview
 	4. Create Recyclerview Adapter class
 		- > adapter class extends with RecyclerView.Adapter<present_class_name.oneInnerclass>
 		- > Implement recyclerview methods(Alt+Enter or click on red bulb in left side of the line)
@@ -97,12 +98,105 @@ User
 https://pixabay.com/api/?key=14141723-8df1329a32d4b2aac969c1593&q=cat&image_type=photo&pretty=true
 
 
+SharedPreferences:
+
+
+
+Sqlite and ContentProvider :
+
+SQLite : 
+
+	-> SQLite is a opensource SQL database that stores data to a text file on a device. 
+	-> Android comes in with built in SQLite database implementation.
+	-> SQLite supports all the relational database features.
+
+	1. Create Project
+	2. complete xml design based on user inputs
+	3. get ui components id's in java class
+	4. create one java class and that class extends with SQLiteOpenHelper
+		-> Alt+Enter implement methods
+			- onCreate(Sqlitedatabae sq)
+			- onUpgrade()
+		-> based on user requirement use read,delete,update,insert
+		-> asign all values to ContentValues then pass the CV obj
+
+SQLiteDatabase -> database -> table -> columns
+for insert:
+SQLiteDatabase -> getWritableDatabase(this)
+for reading
+SQLiteDatabase -> getRedableDatabase(this)
+
+Content Provider :
+	-> We store the data in local database(SQLite)
+	-> Provide the data access from one application to one or more applications with in device
+
+RoomDatabase:
+ram 123 o+ aits apssdc
+
+
+Firebase Login:
+
+ we have diff types of Logins in firebase
+
+	-> mail and password
+	-> based on phone number
+	-> By using Google SignIn,facebook,linkedIn,Twitter
+	-> password authentication
+-> Firebase
+	-> FirebaseAuth mAuth;
+	-> DatabaseReference dr;
+	-> StorageReference sr;
+
+
+1. Create Project
+2. Add firebase Depen
+	-> we have two ways to add depen
+		-> through android studio
+			-> first login in android studio with same mail
+		-> external or manual process
+			-> create one project in firebase and follow firebase steps 
+3. Complete ui design in xml file and get id's into corres java file
+4. By using FirebaseAuth class complete authentication process like SignUp and SignIn
+	-> for Authentication permission
+		-> Firebase console -> select your project -> develop(left side) -> Authentication -> setup Sign_method -> select your signIn type and enable permission
 
 
 
 
 
 
+http://engineering.apssdc.in/register
+
+
+Data Storage In Firebase:
+
+1. Create Project
+2. Complete xml design and get id's in java file
+3. add firebase depen's
+4. create POJO/Model class
+	-> serialaizable & parcelable
+5. Store data in firebase
+	-> enable data storage permission in firebasedatabase
+
+Firebase:
+
+StorageReference:
+
+-> upload / save files
+-> save file url in firebasedatabase
+-> get url from firebase database and set to Picasso/Glide
+
+
+
+Google APIs creation(places api):
+
+-> Google Cloud console
+-> goto menu
+-> selecte APIs & Services
+-> select Credentials
+-> Create Credentials
+
+AIzaSyB4x3AvMnqaJIMIhPm_Oo18y4po8E-9PHQ
 
 
 
