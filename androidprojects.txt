@@ -198,7 +198,8 @@ Google APIs creation(places api):
 
 AIzaSyB4x3AvMnqaJIMIhPm_Oo18y4po8E-9PHQ
 
-**FirebaseInstanceId**
+
+FirebaseInstanceId
 
  FirebaseInstanceId.getInstance().getInstanceId()
                 .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
